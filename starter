@@ -1,0 +1,979 @@
+# Starter Prompt: Tutor GoodVibez Life
+
+```text
+PROJECT NAME
+
+Tutor GoodVibez Life
+
+LIVE SUBDOMAIN
+
+The tutoring web platform will be built for:
+
+tutor.goodvibez.life
+
+Main brand domain:
+
+goodvibez.life
+
+Future shared API domain:
+
+api.goodvibez.life
+
+Optional admin domain:
+
+admin.goodvibez.life
+
+--------------------------------------------------
+
+MAIN GOAL
+
+Build a tutoring website first, using the same overall structure and long-term thinking as the existing wedding planner app.
+
+The first working version should be a clean, polished, responsive tutoring web platform hosted at:
+
+tutor.goodvibez.life
+
+Later, build an iPhone and iPad app.
+
+The website and Apple app must use the same backend, same database, same accounts, same tutor profiles, same student profiles, same messages, same assignments, same payments, same calendars, same AI tutor history, and same student progress data.
+
+Do not build two separate systems.
+
+The correct long-term structure is:
+
+Student or tutor website
+connects to
+Backend/API
+connects to
+MySQL database
+
+Future Apple app
+connects to
+Backend/API
+connects to
+same MySQL database
+
+The future Apple app must not connect directly to MySQL.
+
+--------------------------------------------------
+
+BRAND STYLE AND ART DIRECTION
+
+Use the attached Tutor GoodVibez Life logo and icon as the main visual inspiration.
+
+The art style should match the attachments:
+
+Clean educational technology brand
+White background
+Rounded friendly shapes
+Modern tutor dashboard look
+Blue-to-purple gradient accents
+Navy blue text
+Bright cyan highlights
+Purple accent details
+Open-book learning symbol
+Graduation cap symbol
+Speech bubble/community learning feel
+Small sparkle and digital-square details
+Friendly student-and-tutor energy
+Premium but approachable learning platform
+
+Primary visual colors:
+
+Deep navy: #06145F
+Royal blue: #1D5CFF
+Bright cyan: #19BFEF
+Purple: #6C2BFF
+Soft lavender: #EEE8FF
+Soft sky blue: #EAF8FF
+White: #FFFFFF
+Near black: #101426
+Light gray: #F5F7FB
+
+Use gradients similar to the logo:
+
+Blue to purple gradient
+Cyan to royal blue gradient
+Navy to purple accent gradient
+
+Suggested gradient examples:
+
+linear-gradient(135deg, #19BFEF, #1D5CFF, #6C2BFF)
+linear-gradient(135deg, #06145F, #1D5CFF)
+linear-gradient(135deg, #EAF8FF, #EEE8FF)
+
+The design should feel:
+
+Smart
+Warm
+Premium
+Educational
+Modern
+Safe
+Organized
+High-value
+Friendly for students
+Professional for tutors
+Trustworthy for parents
+
+--------------------------------------------------
+
+FONT STYLE
+
+Use a clean rounded modern font style that matches the attached logo.
+
+Preferred web fonts:
+
+Primary font:
+Poppins
+
+Backup options:
+Nunito Sans
+Inter
+Montserrat
+Arial sans-serif
+
+Use Poppins for headings, buttons, navigation, dashboard cards, and important labels.
+
+Use Inter or Nunito Sans for longer body text if needed.
+
+Typography style:
+
+Large rounded headings
+Friendly button text
+Clear dashboard labels
+Easy-to-read student content
+Professional tutor profile pages
+No overly decorative fonts
+No hard-to-read cursive fonts
+
+Suggested CSS font stack:
+
+font-family: 'Poppins', 'Nunito Sans', 'Inter', Arial, sans-serif;
+
+--------------------------------------------------
+
+TECHNOLOGY
+
+Frontend:
+
+HTML
+CSS
+JavaScript
+
+Backend:
+
+PHP
+MySQL
+
+Hosting:
+
+cPanel or another standard shared web host
+
+Future Apple app:
+
+Swift
+SwiftUI
+
+Future AI backend:
+
+Python
+FastAPI
+
+Future payment processing:
+
+Stripe or another secure payment processor
+
+Do not store payment card details in the local database.
+Use a trusted payment processor for payments.
+
+--------------------------------------------------
+
+USER TYPES
+
+Create these user roles:
+
+1. Student
+2. Tutor
+3. Parent
+4. Admin
+
+Save each user's role in the database.
+
+Role definitions:
+
+Student:
+Learner using tutoring, assignments, messages, study planning, AI tutor tools, and progress tracking.
+
+Tutor:
+A human tutor who can apply to teach, create a tutor profile, manage students, receive payments, create assignments, respond to messages, and optionally bring their own students onto the platform.
+
+Parent:
+A parent or guardian who can view linked student progress, assignments, calendars, messages, payment status, and tutor information.
+
+Admin:
+The platform owner who manages users, tutor applications, subscriptions, payment settings, subjects, AI tutor assignment boards, and platform activity.
+
+--------------------------------------------------
+
+IMPORTANT BUSINESS MODEL REQUIREMENTS
+
+Keep a higher pay scale in mind.
+
+This should not look like a cheap tutoring site.
+
+Design and structure the platform so it can support premium tutoring packages, high-value tutor profiles, paid tutor applications, recurring student subscriptions, and future AI-powered tutoring products.
+
+Leave room for:
+
+Premium tutoring plans
+Higher hourly tutor rates
+Tutor application fees
+Tutor subscription plans
+Student subscription plans
+Parent billing
+Tutor payouts
+AI tutor add-ons
+Assignment-board access fees
+Premium AI study tools
+Private tutor-student relationships
+Tutors bringing their own students
+Platform commission or service fees
+
+Do not hard-code one price everywhere.
+Create flexible pricing structure so pricing can be changed later from admin settings or database tables.
+
+--------------------------------------------------
+
+ORGANIC TUTOR SECTION
+
+Create an organic tutor section for tutors who want to join the platform.
+
+This section should support:
+
+Tutor application page
+Tutor profile creation
+Tutor subject selection
+Tutor availability
+Tutor bio
+Tutor credentials
+Tutor hourly rate
+Tutor package pricing
+Tutor approval status
+Tutor subscription or application payment
+Tutor dashboard
+Tutor student invitation links
+Tutor ability to bring their own students
+Tutor ability to have students sign up and pay
+Tutor messages
+Tutor assignments
+Tutor calendar
+Tutor payout tracking placeholder
+
+The organic tutor section should include pages such as:
+
+become-a-tutor.php
+tutor-application.php
+tutor-pricing.php
+tutor/onboarding.php
+tutor/profile.php
+tutor/students.php
+tutor/invite-students.php
+tutor/payments.php
+tutor/payouts.php
+
+Tutor application status examples:
+
+pending
+approved
+rejected
+needs_more_info
+suspended
+
+Tutor payment status examples:
+
+not_started
+application_fee_due
+subscription_active
+subscription_past_due
+payout_pending
+payout_complete
+
+--------------------------------------------------
+
+AI TUTOR ASSIGNMENT BOARD
+
+Leave room for an AI tutor assignment board.
+
+The AI tutor assignment board does not need to work in the first version.
+
+Create placeholder structure for it.
+
+Future AI tutor assignment board features may include:
+
+AI-generated assignments
+AI-recommended practice problems
+Student assignment queue
+Tutor-reviewed AI assignments
+Subject-based AI tasks
+Due dates
+Difficulty levels
+Completion status
+AI feedback
+Tutor feedback
+Parent progress view
+Student performance insights
+
+Create placeholder pages such as:
+
+ai-tutor.php
+ai-assignment-board.php
+student/ai-tutor.php
+student/ai-assignment-board.php
+tutor/ai-assistant.php
+tutor/ai-assignment-board.php
+admin/ai-settings.php
+admin/ai-assignment-board.php
+
+Future AI assignment statuses:
+
+draft
+assigned
+in_progress
+submitted
+reviewed
+needs_revision
+completed
+
+--------------------------------------------------
+
+WARM WELCOME JAVASCRIPT REQUIREMENT
+
+Use JavaScript to show a warm welcome message for both students and tutors.
+
+The warm welcome should be role-aware.
+
+Examples:
+
+For students:
+
+Welcome back, [Student Name]. Ready to learn, grow, and thrive today?
+
+For tutors:
+
+Welcome back, [Tutor Name]. Ready to guide students and grow your tutoring business today?
+
+For parents:
+
+Welcome back, [Parent Name]. Here is your student's learning progress today.
+
+For admins:
+
+Welcome back, Admin. Here is your Tutor GoodVibez Life command center.
+
+Requirements:
+
+The welcome message should appear on dashboards.
+The welcome message should work for both tutors and students.
+The welcome message should use the user's first name when available.
+The welcome message should fall back to a friendly generic message when no name is available.
+The welcome message can be created with JavaScript, but login security must not depend on JavaScript.
+Authentication and authorization must be handled by PHP sessions and role checks.
+
+Create a shared JavaScript file later:
+
+js/welcome.js
+
+Possible data attributes:
+
+data-user-role
+data-user-name
+
+Example HTML placeholder:
+
+<div id="warmWelcome" data-user-role="student" data-user-name="Maya"></div>
+
+Example behavior:
+
+JavaScript reads the role and name.
+JavaScript displays the correct warm welcome message.
+JavaScript should support student, tutor, parent, and admin roles.
+
+--------------------------------------------------
+
+FIRST VERSION CORE FEATURES
+
+Build a simple working website first.
+
+Do not build everything at once.
+
+The first version should include the structure for:
+
+Home page
+Registration
+Login
+Logout
+Role-based dashboards
+Student dashboard
+Tutor dashboard
+Parent dashboard
+Admin dashboard
+Tutor application area
+Student profile
+Tutor profile
+Subjects
+Messages
+Assignments
+Calendar
+Study planner
+AI tutor placeholder
+AI assignment board placeholder
+Payments placeholder
+Settings
+
+The AI tutor, real payments, and advanced analytics do not need to work in the first version.
+Create the interface and folder structure first.
+
+--------------------------------------------------
+
+STUDENT FEATURES
+
+Student users should eventually be able to:
+
+Create account
+Log in
+View student dashboard
+See warm welcome message
+Edit profile
+Select grade level
+Select subjects
+View assigned tutor
+Search approved tutors
+Book tutoring sessions placeholder
+View assignments
+Submit assignments
+View AI tutor placeholder
+View AI assignment board placeholder
+Send messages to tutor
+View calendar
+View study planner
+View exam dates
+Track progress
+View statistics
+Manage settings
+View payment or subscription status if applicable
+
+--------------------------------------------------
+
+TUTOR FEATURES
+
+Tutor users should eventually be able to:
+
+Apply to become a tutor
+Pay application fee or subscription if required
+Create tutor profile
+Add credentials
+Add subjects taught
+Add grade levels taught
+Set hourly rate
+Create package pricing
+Add availability
+Get approved by admin
+See warm welcome message
+View tutor dashboard
+Manage students
+Invite their own students
+Send student signup links
+Have students sign up and pay through the platform
+Create assignments
+View submissions
+Send messages
+Manage calendar
+Use AI assistant placeholder
+Use AI assignment board placeholder
+View payment status
+View payout placeholder
+View business growth stats
+Manage settings
+
+--------------------------------------------------
+
+PARENT FEATURES
+
+Parent users should eventually be able to:
+
+Create account
+Log in
+Link to student
+View parent dashboard
+See student progress
+View assignments
+View tutor messages
+Message tutor if allowed
+View calendar
+View payment status
+Manage billing placeholder
+Manage settings
+
+--------------------------------------------------
+
+ADMIN FEATURES
+
+Admin users should eventually be able to:
+
+View admin dashboard
+Manage all users
+Approve or reject tutors
+Manage tutor applications
+Manage student accounts
+Manage parent accounts
+Manage tutor profiles
+Manage subjects
+Manage grade levels
+Manage pricing plans
+Manage tutor application fees
+Manage subscriptions placeholder
+Manage platform commission settings placeholder
+Manage AI tutor settings placeholder
+Manage AI assignment board placeholder
+View messages/activity logs
+Disable accounts
+Change user roles
+View system reports
+
+--------------------------------------------------
+
+DATABASE TABLES TO CREATE LATER
+
+Do not create the database in Step 1.
+
+Plan for these future tables:
+
+users
+profiles
+student_profiles
+tutor_profiles
+parent_student_links
+tutor_student_links
+tutor_applications
+tutor_credentials
+tutor_subjects
+subjects
+grade_levels
+student_subjects
+assignments
+assignment_submissions
+ai_assignments
+ai_conversations
+messages
+calendar_events
+study_sessions
+study_plans
+exam_dates
+statistics
+pricing_plans
+subscriptions
+payments
+payouts
+student_invites
+notifications
+activity_log
+admin_settings
+
+--------------------------------------------------
+
+PAYMENT AND PRICING DATA TO PLAN FOR LATER
+
+Plan for payment-related fields but do not build real payment processing in Step 1.
+
+Future pricing should support:
+
+Tutor application fee
+Tutor monthly membership
+Tutor yearly membership
+Student monthly subscription
+Student per-session payments
+Tutoring packages
+AI tutor monthly add-on
+AI assignment board access
+Platform service fee
+Tutor payout tracking
+Refund status
+Coupon codes
+Scholarship or discount codes
+
+Payments table should eventually store:
+
+user ID
+student ID if applicable
+tutor ID if applicable
+plan ID
+payment processor ID
+amount
+currency
+status
+created date
+paid date
+refund status
+
+Never store raw credit card numbers.
+
+--------------------------------------------------
+
+SECURITY REQUIREMENTS
+
+Use:
+
+Password hashing
+Prepared SQL statements
+PHP sessions
+Role checks
+Input validation
+Output escaping
+CSRF protection
+File upload restrictions
+HTTPS
+Secure password reset tokens
+Access control by user role
+Access control by tutor-student relationship
+Access control by parent-student relationship
+Secure payment processor for payments
+
+Do not store plain-text passwords.
+Do not put database passwords inside public JavaScript files.
+Do not store credit card numbers.
+Do not allow one student to access another student's private data.
+Do not allow tutors to access students unless connected or approved.
+Do not allow parents to access students unless linked.
+Do not allow unapproved tutors to receive students.
+Do not allow the Apple app to connect directly to MySQL.
+
+--------------------------------------------------
+
+WEBSITE PAGE STRUCTURE
+
+Create this general page structure later:
+
+index.php
+register.php
+login.php
+logout.php
+forgot-password.php
+dashboard.php
+profile.php
+subjects.php
+assignments.php
+calendar.php
+study-planner.php
+statistics.php
+messages.php
+ai-tutor.php
+ai-assignment-board.php
+become-a-tutor.php
+tutor-application.php
+tutor-pricing.php
+pricing.php
+settings.php
+
+Folders:
+
+student/
+tutor/
+parent/
+admin/
+api/
+includes/
+css/
+js/
+uploads/
+database/
+docs/
+assets/
+assets/images/
+assets/icons/
+assets/fonts/
+
+--------------------------------------------------
+
+ROLE-SPECIFIC PAGES
+
+student/
+
+student/dashboard.php
+student/profile.php
+student/subjects.php
+student/assignments.php
+student/submissions.php
+student/calendar.php
+student/study-planner.php
+student/exam-dates.php
+student/statistics.php
+student/messages.php
+student/ai-tutor.php
+student/ai-assignment-board.php
+student/payments.php
+student/settings.php
+
+tutor/
+
+tutor/dashboard.php
+tutor/onboarding.php
+tutor/profile.php
+tutor/application-status.php
+tutor/students.php
+tutor/invite-students.php
+tutor/subjects.php
+tutor/assignments.php
+tutor/create-assignment.php
+tutor/submissions.php
+tutor/calendar.php
+tutor/messages.php
+tutor/ai-assistant.php
+tutor/ai-assignment-board.php
+tutor/payments.php
+tutor/payouts.php
+tutor/settings.php
+
+parent/
+
+parent/dashboard.php
+parent/students.php
+parent/assignments.php
+parent/calendar.php
+parent/statistics.php
+parent/messages.php
+parent/payments.php
+parent/settings.php
+
+admin/
+
+admin/dashboard.php
+admin/users.php
+admin/roles.php
+admin/tutor-applications.php
+admin/tutors.php
+admin/students.php
+admin/parents.php
+admin/subjects.php
+admin/grade-levels.php
+admin/pricing.php
+admin/payments.php
+admin/payouts.php
+admin/ai-settings.php
+admin/ai-assignment-board.php
+admin/activity.php
+admin/reports.php
+admin/settings.php
+
+--------------------------------------------------
+
+SHARED FILES
+
+Create reusable files later:
+
+includes/header.php
+includes/footer.php
+includes/navigation.php
+includes/database.php
+includes/auth.php
+includes/functions.php
+includes/roles.php
+includes/csrf.php
+includes/config.php
+includes/payments.php
+includes/tutor-access.php
+includes/student-access.php
+
+Do not repeat the same code on every page.
+
+Use includes for:
+
+Shared layout
+Database connection
+Authentication
+Role checks
+CSRF protection
+Utility functions
+Tutor approval checks
+Student/tutor relationship checks
+Payment status placeholders
+
+--------------------------------------------------
+
+JAVASCRIPT FILES TO PLAN FOR
+
+Create these JavaScript files later:
+
+js/main.js
+js/welcome.js
+js/navigation.js
+js/dark-mode.js
+js/forms.js
+js/notifications.js
+js/calendar.js
+js/assignments.js
+js/ai-board.js
+js/tutor-application.js
+js/pricing.js
+
+JavaScript can improve the experience but must not be used as the source of security.
+
+PHP must handle login, sessions, permissions, role checks, and database security.
+
+--------------------------------------------------
+
+CSS FILES TO PLAN FOR
+
+Create these CSS files later:
+
+css/style.css
+css/dashboard.css
+css/forms.css
+css/navigation.css
+css/responsive.css
+css/tutor.css
+css/student.css
+css/admin.css
+css/ai-board.css
+
+Design should match the attached logo style with blue, cyan, purple, navy, white, rounded cards, soft shadows, and a clean education technology feel.
+
+--------------------------------------------------
+
+FUTURE API
+
+Later create an API at:
+
+api.goodvibez.life
+
+The API will allow the future Apple app to use:
+
+User login
+Registration
+Profiles
+Tutor profiles
+Student profiles
+Tutor applications
+Subjects
+Assignments
+Assignment submissions
+AI assignment board
+Messages
+Calendar
+Study planner
+Payments status
+Statistics
+AI conversations
+
+Use JSON responses.
+
+Future API route examples:
+
+POST /api/register
+POST /api/login
+POST /api/logout
+GET  /api/profile
+GET  /api/student/profile
+GET  /api/tutor/profile
+POST /api/tutor/apply
+GET  /api/subjects
+GET  /api/assignments
+POST /api/assignments
+GET  /api/submissions
+POST /api/submissions
+GET  /api/ai/assignments
+POST /api/ai/assignments
+GET  /api/messages
+POST /api/messages
+GET  /api/calendar
+POST /api/calendar
+GET  /api/payments/status
+GET  /api/statistics
+POST /api/ai/tutor-message
+
+--------------------------------------------------
+
+FOLDER STRUCTURE FIRST TASK
+
+Start with Step 1 only.
+
+Create the complete folder structure only.
+
+Do not generate database SQL yet.
+Do not create login yet.
+Do not create full page code yet.
+Do not build payments yet.
+Do not build working AI yet.
+
+Create only folders and placeholder .gitkeep files where needed.
+
+Create this folder structure:
+
+student/
+tutor/
+parent/
+admin/
+api/
+includes/
+css/
+js/
+uploads/
+database/
+docs/
+assets/
+assets/images/
+assets/icons/
+assets/fonts/
+
+After creating the folder structure:
+
+Explain what each folder is used for.
+List all folders created.
+List all files created.
+Show how to test that the folders exist.
+Then stop and wait for the next instruction.
+
+--------------------------------------------------
+
+BUILD ORDER
+
+Complete the project in this order:
+
+1. Folder structure
+2. Basic placeholder pages
+3. Brand styling foundation
+4. Warm welcome JavaScript for students and tutors
+5. Database SQL
+6. Database connection
+7. Registration
+8. Login and logout
+9. Role-based dashboards
+10. Student profile
+11. Tutor application flow
+12. Tutor profile
+13. Parent dashboard
+14. Subjects and grade levels
+15. Assignments
+16. Assignment submissions
+17. AI tutor placeholder
+18. AI assignment board placeholder
+19. Calendar
+20. Study planner
+21. Messages
+22. Statistics
+23. Pricing and payment placeholders
+24. Admin dashboard
+25. Tutor approval tools
+26. Deployment instructions for tutor.goodvibez.life
+27. Future API planning document
+
+Only work on one step at a time.
+
+After completing each step:
+
+Explain what was created.
+List all files and folders created.
+Show how to test it.
+Do not rewrite completed files unless required.
+Do not skip steps.
+```
